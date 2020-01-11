@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 
-RomanticRestaurants::CLI.new.start
+require '.lib/romantic_restaurants'
+
+RomanticRestaurants::CLI.new.call
