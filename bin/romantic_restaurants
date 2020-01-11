@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+RomanticRestaurants::CLI.new.start

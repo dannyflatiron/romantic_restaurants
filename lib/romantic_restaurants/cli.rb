@@ -1,3 +1,7 @@
-#!/user/bin/env ruby
-
-puts "Hello World"
+class RomanticRestaurants::CLI
+  
+  def call
+    puts "Restaurant list"
+  end
+  
+end
