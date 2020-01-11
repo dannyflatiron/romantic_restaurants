@@ -1,28 +1,20 @@
 # RomanticRestaurants
 
+This Ruby Gem provides a CLI that lists some of the most romantic restaurants in NYC from the website Town and Country Magazine.
+
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/romantic_restaurants`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'romantic_restaurants'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
     $ gem install romantic_restaurants
 
 ## Usage
 
-TODO: Write usage instructions here
+Type the below and follow the on screen prompts
+
+    $ romantic_restaurants
 
 ## Development
 
@@ -37,7 +29,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/'conge
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the RomanticRestaurants project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/'congenial-key-6805'/romantic_restaurants/blob/master/CODE_OF_CONDUCT.md).
