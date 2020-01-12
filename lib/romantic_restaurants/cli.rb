@@ -19,6 +19,9 @@ class RomanticRestaurants::CLI
     while input != "exit"
     puts "Enter the number of the restaurant that you'd like more info on or type list to see the restaurants again or type exit."
     input = gets.strip.downcase
+    if input.to_i > 0
+      # -1 because I want the array index 
+      puts @restaurant[input.to_i-1]
       case input
       when "1"
         puts "More info on restaurant 1..."
