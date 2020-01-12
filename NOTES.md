@@ -32,5 +32,5 @@ Which restaurant do you want more information on?
 
 What is a restaurant?
 
-A restaurant has a name, address, contact information
+A restaurant has a name, address, phone number
 

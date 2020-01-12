@@ -11,7 +11,7 @@ class RomanticRestaurants::CLI
   
   def list_restaurants
     puts "Restaurant list"
-    @restaurant = RomanticRestaurants::Restaurant.today
+    @restaurant = RomanticRestaurants::Restaurant.all
   end
   
   def restaurant_description
