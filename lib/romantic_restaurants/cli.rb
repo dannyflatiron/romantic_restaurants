@@ -17,8 +17,9 @@ class RomanticRestaurants::CLI
   end
   
   def restaurant_description
-    puts "Enter the number of the restaurant that you'd like more info on
-    input = gets.strip
+    puts "Enter the number of the restaurant that you'd like more info on or type exit."
+    while input != "exit"
+    input = gets.strip.downcase
     case input
     when "1"
       puts "More info on restaurant 1..."
@@ -27,6 +28,10 @@ class RomanticRestaurants::CLI
     when "3"
       puts "More info on restaurant 3..."
     end
+  end
+  
+  def contact_information
+    puts "
   end
   
 end
