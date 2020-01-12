@@ -15,7 +15,7 @@ class RomanticRestaurants::CLI
       1. River Cafe
       2. Le Bernadine
     DOC
-  end
+    @restaurant = RomanticRestaurants::Restaurant.today
   end
   
   def restaurant_description
@@ -58,6 +58,5 @@ class RomanticRestaurants::CLI
       
     end
     
-  end
-  
+end
 end
