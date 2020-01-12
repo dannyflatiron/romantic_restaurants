@@ -11,10 +11,6 @@ class RomanticRestaurants::CLI
   
   def list_restaurants
     puts "Restaurant list"
-    puts <<-DOC.gsub /^\s*/, ''
-      1. River Cafe
-      2. Le Bernadine
-    DOC
     @restaurant = RomanticRestaurants::Restaurant.today
   end
   

@@ -5,6 +5,7 @@ require 'pry'
 
 require_relative "romantic_restaurants/version"
 require "romantic_restaurants/cli"
+require "./romantic_restaurants/restaurants"
 require "romantic_restaurants/scraper"
 
 # module RomanticRestaurants
