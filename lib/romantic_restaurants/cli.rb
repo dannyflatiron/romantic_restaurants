@@ -19,8 +19,9 @@ class RomanticRestaurants::CLI
   end
   
   def restaurant_description
-    puts "Enter the number of the restaurant that you'd like more info on or type exit."
+    input = nil
     while input != "exit"
+    puts "Enter the number of the restaurant that you'd like more info on or type list to see the restaurants again or type exit."
     input = gets.strip.downcase
       case input
       when "1"
@@ -29,12 +30,15 @@ class RomanticRestaurants::CLI
         puts "More info on restaurant 2..."
       when "3"
         puts "More info on restaurant 3..."
+      when "list"
+        list_restaurants
       end
     end
   end
   
   def contact_information
     puts "Enter number to get restaurant's contact information"
+    input = nil
     while input != "exit"
     input = gets.strip.downcase
       case input
