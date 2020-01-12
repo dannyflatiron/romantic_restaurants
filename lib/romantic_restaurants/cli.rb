@@ -40,6 +40,10 @@ class RomanticRestaurants::CLI
     input = nil
     while input != "exit"
     input = gets.strip.downcase
+    
+      if input.to_a > 0
+        restaurant = @restaurant[input.to_i-1]
+        puts "#{restaurant.address} - #{restaurant.phone_number}"
       case input
       when "1"
         puts "Contact information on 1..."
