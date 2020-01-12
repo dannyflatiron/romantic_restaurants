@@ -13,7 +13,7 @@ class RomanticRestaurants::CLI
     puts "Restaurant list"
     @restaurant = RomanticRestaurants::Restaurant.all
     @restaurant.each_with_index(1) do |restaurant, r|
-      puts "#{r}. #{restaurant}"
+      puts "#{r}. #{restaurant.name}"
     end
   end
   
@@ -25,7 +25,8 @@ class RomanticRestaurants::CLI
     
       if input.to_i > 0
         # -1 because I want the array index 
-        puts @restaurant[input.to_i-1]
+        restaurant = @restaurant[input.to_i-1]
+        puts "#{restaurant.description}"
         elsif input == "list"
           list_restaurants
         else
