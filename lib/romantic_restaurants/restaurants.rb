@@ -23,6 +23,6 @@ class RomanticRestaurants::Restaurant
     restaurant_2.url = "https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"
   end
     
-  [restaurant_1, restaurant_2]
+  # [restaurant_1, restaurant_2]
   
 end

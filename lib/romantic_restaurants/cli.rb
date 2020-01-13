@@ -54,7 +54,9 @@ class RomanticRestaurants::CLI
       when "4"
         puts "Contact information on 4..."
       end
+      end
     end
+  end
     
     def goodbye
       puts "See you later."
@@ -62,4 +64,5 @@ class RomanticRestaurants::CLI
     end
     
 end
-end
+
+

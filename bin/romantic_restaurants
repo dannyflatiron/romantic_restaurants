@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative '.lib/romantic_restaurants'
+require_relative '../lib/romantic_restaurants.rb'
 
 RomanticRestaurants::CLI.new.call
