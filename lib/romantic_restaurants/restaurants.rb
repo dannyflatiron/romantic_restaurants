@@ -21,8 +21,9 @@ class RomanticRestaurants::Restaurant
     restaurant_2.description = "Restaurant description"
     restaurant_2.address = "2222 cornaga ave"
     restaurant_2.url = "https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"
+    [restaurant_1, restaurant_2]
   end
     
-  # [restaurant_1, restaurant_2]
+  
   
 end
