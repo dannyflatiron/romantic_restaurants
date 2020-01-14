@@ -11,6 +11,7 @@ class RomanticRestaurants::Restaurant
     restaurants = nil
     
     restaurants = self.town_and_country
+    restaurants
         # binding.pry
 
   end
@@ -19,13 +20,15 @@ class RomanticRestaurants::Restaurant
     doc = Nokogiri::HTML(open("https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"))
     
     restaurant_name = doc.css('.listicle-slide-hed').collect{|title| title.css('span')[1].text}
+    restaurant_description = doc.css('.listicle-slide-dek').collect{|t| t.text}
       
-            # binding.pry
+           
 
     restaurant = self.new
     restaurant.name = restaurant_name
-    # restaurant.description = doc.search("").text
-    # restaurants
+    restaurant.description = restaurant_description
+    # binding.pry
+    restaurant
   end
     
   
