@@ -10,7 +10,7 @@ class RomanticRestaurants::Restaurant
   def self.scrape_restaurants
     restaurants = []
     
-    restaurants << self
+    restaurants << self.town_and_country
   end
   
   def self.town_and_country
