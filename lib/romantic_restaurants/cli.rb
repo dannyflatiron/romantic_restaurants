@@ -29,9 +29,9 @@ class RomanticRestaurants::CLI
     
       if input.to_i > 0
         # -1 because I want the array index 
-        restaurant = @restaurant[input.to_i-1]
+        restaurant = @restaurant.description[input.to_i-1]
         
-        puts "#{restaurant.description}"
+        puts "#{restaurant}"
         elsif input == "list"
           list_restaurants
           
@@ -41,28 +41,28 @@ class RomanticRestaurants::CLI
     end
   end
   
-  def contact_information
-    puts "Enter number to get restaurant's contact information"
-    input = nil
-    while input != "exit"
-    input = gets.strip.downcase
+  # def contact_information
+  #   puts "Enter number to get restaurant's contact information"
+  #   input = nil
+  #   while input != "exit"
+  #   input = gets.strip.downcase
     
-      if input.to_a > 0
-        restaurant = @restaurant[input.to_i-1]
-        puts "#{restaurant.address} - #{restaurant.phone_number}"
-      case input
-      when "1"
-        puts "Contact information on 1..."
-      when "2"
-        puts "Contact information on 2..."
-      when "3"
-        puts "Contact informaiton on 3..."
-      when "4"
-        puts "Contact information on 4..."
-      end
-      end
-    end
-  end
+  #     if input.to_a > 0
+  #       restaurant = @restaurant[input.to_i-1]
+  #       puts "#{restaurant.address} - #{restaurant.phone_number}"
+  #     case input
+  #     when "1"
+  #       puts "Contact information on 1..."
+  #     when "2"
+  #       puts "Contact information on 2..."
+  #     when "3"
+  #       puts "Contact informaiton on 3..."
+  #     when "4"
+  #       puts "Contact information on 4..."
+  #     end
+  #     end
+  #   end
+  # end
     
     def goodbye
       puts "See you later."
