@@ -4,10 +4,10 @@ class RomanticRestaurants::Restaurant
   
   def self.all
     # should return a bunch of instances of deals
-    puts <<-DOC.gsub /^\s*/, ''
-      1. River Cafe
-      2. Le Bernadine
-    DOC
+    # puts <<-DOC.gsub /^\s*/, ''
+    #   1. River Cafe
+    #   2. Le Bernadine
+    # DOC
     restaurant_1 = self.new
     restaurant_1.name = "Le Bernadine"
     restaurant_1.phone_number = "917_327-2845"
