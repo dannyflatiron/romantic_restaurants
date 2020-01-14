@@ -11,6 +11,9 @@ class RomanticRestaurants::CLI
   
   def list_restaurants
     puts "Restaurant list"
+    puts ""
+    puts "----------------------------------"
+    puts ""
     @restaurant = RomanticRestaurants::Restaurant.all
     @restaurant.each.with_index(1) do |restaurant, r|
       puts "#{r}. #{restaurant}"
