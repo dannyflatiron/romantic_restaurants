@@ -11,10 +11,14 @@ class RomanticRestaurants::Restaurant
     restaurants = []
     
     restaurants << self
+  end
+  
+  def self.town_and_country
     doc = Nokogiri::HTML(open("https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"))
-    binding.pry
     
-    
+    restaurant = self.new
+    restaurant.name = doc.search("").text
+    restaurant.description = doc.search("").text
     
     restaurants
   end
