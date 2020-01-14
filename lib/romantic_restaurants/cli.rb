@@ -5,7 +5,7 @@ class RomanticRestaurants::CLI
   def call
     list_restaurants
     restaurant_description
-    contact_information
+    # contact_information
     goodbye
   end
   
@@ -19,6 +19,7 @@ class RomanticRestaurants::CLI
     @restaurant.name.each.with_index(1) do |restaurant, r|
       puts "#{r}. #{restaurant}"
     end
+    puts ""
   end
   
   def restaurant_description
