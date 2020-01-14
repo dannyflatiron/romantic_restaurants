@@ -1,5 +1,5 @@
 #CLI Controller
-
+require 'pry'
 class RomanticRestaurants::CLI
   
   def call

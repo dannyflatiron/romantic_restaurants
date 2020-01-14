@@ -1,5 +1,8 @@
+# my environment file
 require 'open-uri'
 require 'nokogiri'
+require 'pry'
+
 
 
 require_relative "romantic_restaurants/version"
