@@ -19,8 +19,8 @@ class RomanticRestaurants::Restaurant
   def self.town_and_country
     doc = Nokogiri::HTML(open("https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"))
     
-    restaurant_name = doc.css('.listicle-slide-hed').collect{|title| title.css('span')[1].text}
-    restaurant_description = doc.css('.listicle-slide-dek').collect{|t| t.text}
+    restaurant_name = doc.css('.listicle-slide-hed').collect{|title| title.css('span')[1].text.strip}
+    restaurant_description = doc.css('.listicle-slide-dek').collect{|t| t.text.strip}
       
            
 

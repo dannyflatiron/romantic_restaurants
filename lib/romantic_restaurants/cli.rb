@@ -4,9 +4,8 @@ class RomanticRestaurants::CLI
   
   def call
     list_restaurants
-    restaurant_description
-    # contact_information
-    goodbye
+    restaurant_description 
+    
   end
   
   def list_restaurants
@@ -33,9 +32,12 @@ class RomanticRestaurants::CLI
         restaurant = @restaurant.description[input.to_i-1]
         
         puts "#{restaurant}"
+        # binding.pry
+        
         elsif input == "list"
           list_restaurants
-          
+        elsif input == "exit"
+          goodbye
         else
           puts "Note sure what you want, type list or exit."
       end
@@ -67,7 +69,6 @@ class RomanticRestaurants::CLI
     
     def goodbye
       puts "See you later."
-      
     end
     
 end
