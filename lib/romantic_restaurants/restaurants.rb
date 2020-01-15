@@ -1,7 +1,7 @@
 require 'pry'
 class RomanticRestaurants::Restaurant
   
-  attr_accessor :name, :phone_number, :address, :url, :description
+  attr_accessor :name, :description
   
   def self.all
     self.scrape_restaurants
