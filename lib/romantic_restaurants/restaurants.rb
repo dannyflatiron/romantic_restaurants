@@ -3,6 +3,13 @@ class RomanticRestaurants::Restaurant
   
   attr_accessor :name, :description
   
+  # create initialize method 
+  # with instance variables name and description
+  # do I need to create a name and description instance methods 
+  # or just one method performing both functions?
+  # I would also need a self.all method
+  
+  
   def self.all
     self.scrape_restaurants
   end
@@ -17,16 +24,15 @@ class RomanticRestaurants::Restaurant
   end
   
   def self.town_and_country
-    doc = Nokogiri::HTML(open("https://www.townandcountrymag.com/leisure/dining/g3177/most-romantic-restaurants-in-new-york-city/"))
-    
-    restaurant_name = doc.css('.listicle-slide-hed').collect{|title| title.css('span')[1].text.strip}
-    restaurant_description = doc.css('.listicle-slide-dek').collect{|t| t.text.strip}
+   
       
            
 
     restaurant = self.new
-    restaurant.name = restaurant_name
-    restaurant.description = restaurant_description
+    restaurant_name = restaurant.name
+    restaurant_description = restaurant.description
+    # restaurant.name = restaurant_name
+    # restaurant.description = restaurant_description
     # binding.pry
     restaurant
   end
