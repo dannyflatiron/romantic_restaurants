@@ -1,5 +1,5 @@
 require 'pry'
-class RomanticRestaurants::Restaurant
+class RomanticRestaurants::Restaurant < Scraper
   
   attr_accessor :name, :description
   
@@ -9,28 +9,25 @@ class RomanticRestaurants::Restaurant
   # or just one method performing both functions?
   # I would also need a self.all method
   
-  def initialize(name = nil, description = nil)
-    @name 
-    @description
+  @@all = []
+  
+  def initialize(name, description)
+    @name = @@restaurant_name
+    @description = @@restaurant_description
+    binding.pry
+  #   self.new = (Scraper.restaurant_name, Scraper.restaurant_description) 
+  # self
+          
+
+    # self.new = (restaurant_name, restaurant_description)
+    # @@all << self
+    # binding.pry
   end
   
   
   def self.all
-    self.scrape_restaurants
+    @@all
   end
-  
-  def self.scrape_restaurants
-    restaurants = nil
-    
-    restaurants = self.town_and_country
-    restaurants
-        # binding.pry
-
-  end
-  
-  def self.town_and_country
-   
-      
            
 
     restaurant = self.new(name, description)
@@ -40,7 +37,7 @@ class RomanticRestaurants::Restaurant
     # restaurant.description = restaurant_description
     # binding.pry
     restaurant
-  end
+  
     
   
   
