@@ -9,6 +9,11 @@ class RomanticRestaurants::Restaurant
   # or just one method performing both functions?
   # I would also need a self.all method
   
+  def initialize(name = nil, description = nil)
+    @name 
+    @description
+  end
+  
   
   def self.all
     self.scrape_restaurants
@@ -28,7 +33,7 @@ class RomanticRestaurants::Restaurant
       
            
 
-    restaurant = self.new
+    restaurant = self.new(name, description)
     restaurant_name = restaurant.name
     restaurant_description = restaurant.description
     # restaurant.name = restaurant_name
