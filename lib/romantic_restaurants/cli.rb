@@ -46,6 +46,7 @@ class RomanticRestaurants::CLI
         puts "#{restaurant_description}"
         puts ""
         puts "Enter another number to discover more or type list to view the restaurants or  'exit'"
+        puts ""
         elsif input == "list"
           list_restaurants
           puts ""
