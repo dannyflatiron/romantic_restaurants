@@ -19,7 +19,7 @@ class RomanticRestaurants::CLI
       puts "#{r}. #{restaurant}"
     end
     puts ""
-    puts "Enter the number of the restaurant that you'd like more info on type 'exit' to leave."
+    puts "Enter the number of the restaurant that you'd like more info or type 'exit' to leave."
   end
   
   def restaurant_description
