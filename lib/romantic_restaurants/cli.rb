@@ -19,17 +19,23 @@ class RomanticRestaurants::CLI
       puts "#{r}. #{restaurant}"
     end
     puts ""
+    puts "Enter the number of the restaurant that you'd like more info on type 'exit' to leave."
   end
   
   def restaurant_description
-    input = nil
-    while input != "exit"
     puts ""
-    puts "Enter the number of the restaurant that you'd like more info on or type list to see the restaurants again or type exit."
+      
     puts ""
-    input = gets.strip.downcase
     
-      if input.to_i > 0
+    input = nil
+    
+    while input != "exit"
+    
+    input = gets.strip.downcase
+                    # binding.pry
+
+      if input.to_i > 0 && input.to_i < @restaurant.name.length+1
+
         # -1 because I want the array index 
         restaurant_description = @restaurant.description[input.to_i-1]
         restaurant_name = @restaurant.name[input.to_i-1]
@@ -38,19 +44,23 @@ class RomanticRestaurants::CLI
         puts "#{restaurant_name}"
         puts "----------------------"
         puts "#{restaurant_description}"
-        # binding.pry
-        
+        puts ""
+        puts "Enter another number to discover more or type list to view the restaurants or  'exit'"
         elsif input == "list"
           list_restaurants
+          puts ""
         elsif input == "exit"
           goodbye
         else
-          puts "Note sure what you want, type list or exit."
+          puts ""
+          puts "Not sure what you want. Please enter an available number from the list or enter 'exit' to leave."
+          puts ""
       end
     end
   end
   
     def goodbye
+      puts ""
       puts "See you later."
     end
     
