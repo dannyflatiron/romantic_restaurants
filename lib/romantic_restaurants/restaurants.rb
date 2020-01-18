@@ -15,8 +15,9 @@ class RomanticRestaurants::Restaurant
     restaurants = self.town_and_country
     restaurants
         # binding.pry
-
   end
+    
+   
   
   # this should be moved to a different file called RomanticRestaurants::Scraper
   # method should be called scrape_restaurants
@@ -31,10 +32,10 @@ class RomanticRestaurants::Restaurant
            
     # this can possibly be stored in a different method called # create_restaurant
     # this should stay in this class doc called restaurants.rb
-    restaurant = self.new
-    restaurant.name = restaurant_name
-    restaurant.description = restaurant_description
-    # binding.pry
+    # restaurant = self.new
+    # restaurant.name = restaurant_name
+    # restaurant.description = restaurant_description
+    # # binding.pry
     restaurant
   end
     
